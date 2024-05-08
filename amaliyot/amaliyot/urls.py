@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from quiz import views
+from django.contrib.auth.views import LoginView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("app.urls")),
+    path('', views.user_login, name="login"),
+    path('after_login', views.after_login, name='after_login')
 ]
