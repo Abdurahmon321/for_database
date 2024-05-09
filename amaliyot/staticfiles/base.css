@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 60vh;
+}
+
+.navbar{
+    background: #222831;
+    display: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 40px 0;
+}
+
+.text-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-section h1{
+    color: #eeeeee;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+h1 i{
+    margin-left: 30px;
+}
+
+.text-section button{
+    background: #00adb5;
+    color: #eeeeee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.menu-bar{
+    background: #333c49;
+    height: 650px;
+    width: 300px;
+    display: fixed;
+    padding: 20px 0;
+    position: relative;
+}
+
+.profile{
+    margin-left: 80px;
+}
+
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile h2{
+    color: #eeeeee;
+    margin-left: 10px;
+}
+
+.menu{
+    margin-top: 80px;
+}
+
+.menu a{
+    color: #eeeeee;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.menu a{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.menu a:hover{
+    background: #00adb5;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.main-content1{
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    background: rgb(0, 94, 0);
+    color: #eeeeee;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content1:hover{
+    background: hsl(120, 100%, 13%);
+}
+
+.main-content2{
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    background: hsl(16, 100%, 41%);
+    color: #eeeeee;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content2:hover{
+    background: hsl(16, 100%, 25%);
+}
+
+.main-content3{
+    position: absolute;
+    top: 100px;
+    left: 1050px;
+    background: hsl(300, 100%, 21%);
+    color: #eeeeee;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content3:hover{
+    background: hsl(300, 100%, 15%);
+}
+
+.main-section .btn{
+    cursor: pointer;
+}
+
+i{
+    margin-left: 10px;
+}

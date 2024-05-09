@@ -1,0 +1,5 @@
+
+}python:S1192X"_Define a constant instead of duplicating this literal '/teacher/teacher-view-question' 3 times.(ΑΆ³Z8·¥χυ1
+Jpython:S5806"+Rename this variable; it shadows a builtin.(¶ί8·¥χυ1
+ypython:S117*"[Rename this local variable "courseForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ϋª³›8·¥χυ1
+{python:S117L"]Rename this local variable "questionForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(ΎΩο8·¥χυ1

@@ -1,3 +1,7 @@
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+from django.utils.translation import gettext_lazy as _
 from django.db import models
 
 # Create your models here.
@@ -16,7 +20,7 @@ class Course(models.Model):
 
 
 class Question(models.Model):
-    course = models.ForeignKey(Course,on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
     marks = models.PositiveIntegerField()
     question = models.CharField(max_length=600)
     option1 = models.CharField(max_length=200)
@@ -25,6 +29,8 @@ class Question(models.Model):
     option4 = models.CharField(max_length=200)
     cat = (('Option1', 'Option1'), ('Option2', 'Option2'), ('Option3', 'Option3'), ('Option4', 'Option4'))
     answer = models.CharField(max_length=200,choices=cat)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+
 
 
 class Result(models.Model):
@@ -33,3 +39,14 @@ class Result(models.Model):
     marks = models.PositiveIntegerField()
     date = models.DateTimeField(auto_now=True)
 
+
+class UserSignupForm(UserCreationForm):
+    def clean_password1(self):
+        password1 = self.cleaned_data.get('password1')
+        if len(password1) < 8:
+            raise ValidationError(_('Parol kamida 8 ta belgidan iborat bo\'lishi kerak.'))
+        return password1
+
+    class Meta:
+        model = User
+        fields = ['username', 'password1', 'password2']

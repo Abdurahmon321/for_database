@@ -1,0 +1,13 @@
+
+Jpython:S1481;"+Remove the unused local variable "teacher".(şİ¢8•ç¦úõ1
+Opython:S1481M"+Remove the unused local variable "student".(ÒóÚêüÿÿÿÿ8•ç¦úõ1
+Jpython:S5806o"+Rename this variable; it shadows a builtin.(¶Šß˜8•ç¦úõ1
+Jpython:S5806z"+Rename this variable; it shadows a builtin.(¶Šß˜8•ç¦úõ1
+€python:S117"\Rename this local variable "teacherForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(¤¹˜ıÿÿÿÿ8•ç¦úõ1
+xpython:S117"YRename this local variable "userForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(¿…¿8•ç¦úõ1
+Kpython:S5806®"+Rename this variable; it shadows a builtin.(¶Šß˜8•ç¦úõ1
+{python:S117¿"\Rename this local variable "studentForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ç«ÈÜ8•ç¦úõ1
+}python:S117¾"YRename this local variable "userForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(İ¢öşÿÿÿÿ8•ç¦úõ1
+zpython:S117İ"[Rename this local variable "courseForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(‰‘µğ8•ç¦úõ1
+python:S117ü"]Rename this local variable "questionForm" to match the regular expression ^[_a-z][a-z0-9_]*$.(º¦íæÿÿÿÿÿ8•ç¦úõ1
+Vpython:S1172Ã"1Remove the unused function parameter "exception".(Á»Àşşÿÿÿÿ8•ç¦úõ1
